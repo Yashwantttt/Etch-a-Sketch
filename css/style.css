@@ -31,19 +31,25 @@ body{
 }
 
 .pixels{
-    width: 5em;
+    width: 1em;
     height: 1em;
-    box-shadow: 1px;
     background-color: aliceblue;
-    /* margin: 5px 1em; */
     border: 1px solid;
 }
 .container{
-    display: flex;
-    padding: 5em;
-    /* margin: 3em; */
-    flex-direction: column;
-    align-items: center;
+    
+    /* padding: 5em; */
     max-width: 1000px;
-    max-height: 1000px;
+    max-height:fit-content;
+    min-width: 50vh;
+    min-height: 50vh;    
+    border: solid 1px;
+}
+
+.gridContainer{
+    margin: 3em 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
