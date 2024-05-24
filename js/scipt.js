@@ -42,6 +42,13 @@ function gridmaker(x,y){
             mycell.classList.add("pixels")
             mycell.setAttribute('id',"pix")
             roww.appendChild(mycell)
+
+            // Color changer
+            mycell.addEventListener("mouseover",draw)
+            function draw(){
+                mycell.style.backgroundColor = "rgb(255 0 0 / 70%)"
+            }
+
         }
 
     }
@@ -57,15 +64,14 @@ function gridRemover(){
     parent.removeChild(grid)
 }
 
-// function boxCreater(x){
-//     for (i=0;i<x;i++){
-//         for (y=0;y<x;y++){
-//             const newdiv = document.createElement("div");
-//             newdiv.classList.add("pixels")
-//             divContainer.appendChild(newdiv);
-//             console.log(y)
-//             const newline = document.createElement("p");
-//         }
-//         console.log("outer i =",i)
-//     }
+
+
+
+// let boxy = document.getElementById("pix")
+// boxy.addEventListener("click",draw())
+// function draw(){
+//     let boxy = document.getElementById("pix")
+//     boxy.style.backgroundColor= "red"
+//     console.log()
+    
 // }
